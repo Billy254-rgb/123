@@ -287,8 +287,8 @@
                             <div class="author-info">
                                 <i class="fas fa-user"></i> ${book.author || 'Unknown Author'}
                             </div>
-                            <a href="reader.html?file=${book.file}" target="_blank" class="btn btn-primary btn-sm mt-2"><i class="fas fa-book-open"></i> Read Online</a>
-                            <a href="${book.file}" download class="btn btn-secondary btn-sm mt-2"><i class="fas fa-download"></i> Download</a>
+                        `<a href="reader.html?file=${encodeURIComponent(book.file)}" target="_blank" class="btn btn-primary btn-sm mt-2"><i class="fas fa-book-open"></i> Read Online</a>
+                          <a href="${encodeURIComponent(book.file)}" downloadclass="btn btn-secondary btn-sm mt-2"><i class="fas fa-download"></i> Download</a>
                         </div>
                     </div>
                 `;
